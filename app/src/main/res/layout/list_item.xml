@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  ~ Created by andrSnie on 2.01.20 3:17
+  ~ Copyright (c) 2020. All rights reserved.
+  -->
+
+<!-- Layout for a single list item -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tan_background"
+    android:minHeight="@dimen/list_item_height">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/image"
+        android:layout_toEndOf="@id/image"
+        android:paddingLeft="16dp"
+        android:paddingStart="16dp"
+        android:paddingRight = "0dp"
+        android:paddingEnd = "0dp">
+
+        <TextView
+            android:id="@+id/youkr_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:gravity="bottom"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            tools:text="odyn" />
+
+        <TextView
+            android:id="@+id/default_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/youkr_text_view"
+            android:gravity="top"
+            android:textAppearance="?android:textAppearanceMedium"
+            tools:text="one" />
+
+        <ImageView
+            android:id="@+id/ic"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+</RelativeLayout>

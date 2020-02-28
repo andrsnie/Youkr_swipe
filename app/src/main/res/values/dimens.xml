@@ -1,0 +1,9 @@
+<!--
+  ~ Created by andrSnie on 2.01.20 3:17
+  ~ Copyright (c) 2020. All rights reserved.
+  -->
+
+<resources>
+    <!-- Height of each list item -->
+    <dimen name="list_item_height">88dp</dimen>
+</resources>
